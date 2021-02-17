@@ -32,12 +32,9 @@ int main() {
 	// (and the function doesn't take characters), and because they asked the user 
 	// to enter d, not c. So if presumably they want to convert the 
 	// users value to Kelvin they need to use the variable the user entered.
-	if (k >= 0) {
-		cout << k << '\n'; // They capitalized the C in cout which is erroneous
-	}
-	else {
-		cout << "There was an error. That temperature is below 0K wich is immposible";
-	}
+	
+	cout << k << '\n'; // They capitalized the C in cout which is erroneous
+
 	
 	
 	
