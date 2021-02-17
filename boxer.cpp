@@ -7,7 +7,7 @@ and calls the function box_print
 ******************************/
 
 #include "boxer.h"
-#include "print_char.h"
+
 
 #include <string>
 using std::cout;
@@ -54,15 +54,11 @@ int main() {
 		// we actually call the function only if the word wasn't stop, and the
 		// number was positve
 		else{
-			//cout << "\n" << word << " " << n << endl;; // testing I got the vIRBALES IN THE RIGHT PLACES
+			
 			box_print(word, n);
 		}
 		
 	} 
 	
-
-	//box_print("Dog-Cat-Moose", 4); //FOR TESTING 
-
-
 	return 0;
 }
