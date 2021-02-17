@@ -23,7 +23,7 @@ int main() {
 
 	//double c = 0; //This line is unneccessary
 
-	cout << "Enter a temperature in celcius" 
+	cout << "Enter a temperature in celsius" 
 		"\nand I'll print it in Kelvin "; // they didn't intially prompt the user
 	double d; // if they're going to ask the user to enter d they need to declare it first
 	cin >> d;  
@@ -32,9 +32,16 @@ int main() {
 	// (and the function doesn't take characters), and because they asked the user 
 	// to enter d, not c. So if presumably they want to convert the 
 	// users value to Kelvin they need to use the variable the user entered.
-	cout << k << '\n' // They capitalized the C in cout which is erroneous
+	if (k >= 0) {
+		cout << k << '\n'; // They capitalized the C in cout which is erroneous
+	}
+	else {
+		cout << "There was an error. That temperature is below 0K wich is immposible";
+	}
 	
-
+	
+	
+	
 	//cout << "55.5 c = " << ctok(55.5) << " in kelvin" << endl;//used main to test ctok function my way
 
 	//collatz(); //used main to test collatz() right now
