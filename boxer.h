@@ -11,8 +11,9 @@ header for boxprint.cpp
 #define BOXER_H
 
 #include <iostream>
+
 // Declaration: function to print the box
-void box_print(std::string phrase, int num);
+void box_print(std::string word, int num);
 
 
 #endif  

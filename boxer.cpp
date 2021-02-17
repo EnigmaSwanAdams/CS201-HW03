@@ -8,9 +8,57 @@ and calls the function box_print
 
 #include "boxer.h"
 
+#include <string>
+using std::cout;
+using std::cin;
+using std::endl;
+using std::string;
+
+
 int main() {
+	string word = "";
+	int n;
+
 	
-	box_print("TEST", 4);
+	while(true){
+
+		// get word 
+		cout << "Enter a word, or type stop to stop "; 
+		cin >> word;
+		cout << endl;
+		
+		//converting to lowercase in case they entered stop but not in lowercase
+		// it'll stop even if they type somehting like "STOP" or "Stop"
+		for (int i = 0; i < word.size(); i++) {
+			word.at(i) = tolower(word.at(i));
+		}
+		
+		//exits the while loop here only if the user asks to stop
+		if (word == "stop") {
+			break;
+		}
+
+		//gets number
+		cout << "Now enter a positive number ";
+		cin >> n;
+		cout << endl;
+
+		// lets the, know if they entered zero or a negative number
+		if (n <= 0) {
+			cout << "Oops that wasn't a positive number, try again" << endl;;
+			
+		}
+		
+		// we actually call the function only if the word wasn't stop, and the
+		// number was positve
+		else{
+			cout << "\n" << word << " " << n << endl;; // testing I got the vIRBALES IN THE RIGHT PLACES
+		}
+		
+	} 
+	
+
+	//box_print("Hello!", 2); //FOR TESTING 
 
 	return 0;
 }

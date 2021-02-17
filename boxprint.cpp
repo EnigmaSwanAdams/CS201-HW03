@@ -7,7 +7,15 @@ homework assignment
 ******************************/
 
 #include "boxer.h"
+#include <string>
+using std::string;
+using std::cout;
 
-void box_print(std::string phrase, int num) {
+
+void box_print(string word, int n) {
+
+	for (int i = 0; i <= word.size() + (n + 1) * 2; i++) {
+		cout << "*";
+	}
 
 }
