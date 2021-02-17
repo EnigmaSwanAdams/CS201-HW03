@@ -18,26 +18,38 @@ using std::endl;
 void box_print(string word, int n) {
 
 	// top
-	/*for (int i = 0; i < n; i++) {
-		
-		for (int i = 0; i < word.size() + (n + 1) * 2; i++) {
-		cout << "*";
-		}
-		cout << endl; // FOR TESTINTG
+	for (int i = 0; i < n; i++) {
+		print_char('*', word.size() + (n + 1) * 2);
+		cout << endl;
 	}
-	*/
+	
 
 	// middle: similair for every word
-	//print_char('*', n);
+	print_char('*', n); 
+	print_char(' ', word.size() + 2);
+	print_char('*', n);
+	cout << endl;
+
+	print_char('*', n);
+	cout << " " << word << " ";
+	print_char('*', n);
+	cout << endl;
+
+	print_char('*', n);
+	print_char(' ', word.size() + 2);
+	print_char('*', n);
+	cout << endl;
+
+	//bottom (same as the top)
+	for (int i = 0; i < n; i++) {
+		print_char('*', word.size() + (n + 1) * 2);
+		cout << endl;
+	}
+
+
 	
-	/*
-	for (int i = 0; i < word.size()+2; i++) { // spaces 
-		cout << " ";
-	}
-	for (int i = 0; i < n; i++) { // more asterisks
-		cout << "*";
-	}
-	*/
+
+	
 
 
 
