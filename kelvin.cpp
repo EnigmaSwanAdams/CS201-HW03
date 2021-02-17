@@ -24,7 +24,7 @@ if it was going to be decalred at all*/
 double ctok(double c) { 
 	if (c < -273.15) {
 		std::cout << "There was an error. The temperatur you entered was less than 0K which is impossible. \n"
-			"Nonetheless here is what the temperatur would if it were possible" << std::endl;
+			"Nonetheless here is what the temperature would if it were possible" << std::endl;
 	}
 
 	return c + 273.15;

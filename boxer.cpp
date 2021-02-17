@@ -22,17 +22,19 @@ int main() {
 	//fixed and annotated kelvin main() code
 
 	//double c = 0; //This line is unneccessary
-
-	cout << "Enter a temperature in celsius" 
+	
+	cout << "Enter a temperature in celsius, or enter stop to exit"
 		"\nand I'll print it in Kelvin "; // they didn't intially prompt the user
 	double d; // if they're going to ask the user to enter d they need to declare it first
-	cin >> d;  
+	cin >> d;
+		 
+			
 	double k = ctok(d); // they wrote "c" when they should have written d 
 	// both because with quotes around it the compiler thinks "c" is a character
 	// (and the function doesn't take characters), and because they asked the user 
 	// to enter d, not c. So if presumably they want to convert the 
 	// users value to Kelvin they need to use the variable the user entered.
-	
+		
 	cout << k << '\n'; // They capitalized the C in cout which is erroneous
 
 	
