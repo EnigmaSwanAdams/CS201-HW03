@@ -7,6 +7,7 @@ and calls the function box_print
 ******************************/
 
 #include "boxer.h"
+#include "print_char.h"
 
 #include <string>
 using std::cout;
@@ -17,9 +18,9 @@ using std::string;
 
 int main() {
 	string word = "";
-	int n;
+	int n = 0;
 
-	
+	/*
 	while(true){
 
 		// get word 
@@ -56,9 +57,12 @@ int main() {
 		}
 		
 	} 
-	
+	*/
 
 	//box_print("Hello!", 2); //FOR TESTING 
+
+	int x = 5;
+	print_char('#', x);
 
 	return 0;
 }

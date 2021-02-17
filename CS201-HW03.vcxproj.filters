@@ -21,9 +21,15 @@
     <ClCompile Include="boxprint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="print_char.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="boxer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="print_char.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
