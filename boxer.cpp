@@ -7,6 +7,7 @@ and calls the function box_print
 ******************************/
 
 #include "boxer.h"
+#include "collatz.h"
 
 
 #include <string>
@@ -17,6 +18,10 @@ using std::string;
 
 
 int main() {
+
+	//used main to test ctok function
+	//collatz(); //used main to test collatz() right now
+	/*
 	string word = "";
 	int n = 0;
 
@@ -59,6 +64,7 @@ int main() {
 		}
 		
 	} 
+	*/
 	
 	return 0;
 }

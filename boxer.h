@@ -17,13 +17,11 @@ void box_print(std::string word, int num);
 
  
 
-/*Enigma Swan Adams
-* CS 201 homework #3
-date 2/16/21
 
+/******************************
 print_char.h
 header for print_char.cpp
-******************************/
+*/
 
 
 #include <iostream>
