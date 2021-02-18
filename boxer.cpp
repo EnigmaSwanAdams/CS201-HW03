@@ -19,7 +19,7 @@ using std::string;
 
 int main() {
 
-	//fixed and annotated kelvin main() code
+	//fixed and annotated kelvin main() code **********************************************
 
 	//double c = 0; //This line is unneccessary
 	
@@ -38,20 +38,26 @@ int main() {
 	cout << k << '\n'; // They capitalized the C in cout which is erroneous
 
 	
-	
-	
-	
-	//cout << "55.5 c = " << ctok(55.5) << " in kelvin" << endl;//used main to test ctok function my way
+	//used main to test ctok function my way
+	//cout << "55.5 c = " << ctok(55.5) << " in kelvin" << endl; 
 
-	//collatz(); //used main to test collatz() right now
-	/*
+
+
+
+
+	// collatz section in main**************************************************************
+	collatz(); //using main to run collatz() right now
+	
+
+
+	//this is the print box stuff that main does *******************************************
 	string word = "";
 	int n = 0;
 
 	
 	while(true){
 
-		// get word 
+		//get word 
 		cout << "Enter a word, or type stop to stop "; 
 		cin >> word;
 		cout << endl;
@@ -87,7 +93,7 @@ int main() {
 		}
 		
 	} 
-	*/
+	
 	
 	return 0;
 }
